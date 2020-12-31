@@ -39,16 +39,19 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'introduction' => 'required',
-            'location' => 'required',
-            'cost' => 'required'
+            'bname' => 'required',
+            'author' => 'required',
+            'press' => 'required',
+            'isbn' => 'required',
+            'cost' => 'required',
+
+
         ]);
 
         Project::create($request->all());
 
         return redirect()->route('projects.index')
-            ->with('success', 'Project created successfully.');
+            ->with('success', 'Book List created successfully.');
     }
 
     /**
@@ -82,10 +85,11 @@ class ProjectController extends Controller
     public function update(Request $request, Project $project)
     {
         $request->validate([
-            'name' => 'required',
-            'introduction' => 'required',
-            'location' => 'required',
-            'cost' => 'required'
+            'bname' => 'required',
+            'author' => 'required',
+            'press' => 'required',
+            'isbn' => 'required',
+            'cost' => 'required',
         ]);
         $project->update($request->all());
 

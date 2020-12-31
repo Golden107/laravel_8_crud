@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
+@section('title','書籍詳細資料')
 
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> {{ $project->name }}</h2>
+                <h2>Book List</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i
@@ -18,32 +19,32 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
-                {{ $project->name }}
+                {{ $project->bname }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Introduction:</strong>
-                {{ $project->introduction }}
+                <strong>Author:</strong>
+                {{ $project->author }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Location:</strong>
-                {{ $project->location }}
+                <strong>Press:</strong>
+                {{ $project->press }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Cost:</strong>
+                <strong>ISBN:</strong>
+                {{ $project->isbn }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>cost:</strong>
                 {{ $project->cost }}
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Date Created:</strong>
-                {{ date_format($project->created_at, 'jS M Y') }}
-            </div>
-        </div>
-    </div>
+
 @endsection

@@ -17,10 +17,10 @@ class Project extends Model
     ];
 
     protected $fillable = [
-        'name',
-        'introduction',
-        'created_at',
-        'location',
-        'cost'
+        'bname',
+        'author',
+        'press',
+        'isbn',
+        'cost',
     ];
 }

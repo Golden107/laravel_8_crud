@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    <title>App Name - @yield('title')</title>
+    <title>Book List - @yield('title')</title>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
     <!-- Font Awesome JS -->
@@ -20,13 +20,16 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: #9C27B0;
+            background-color: #844200;
             color: white;
             text-align: center;
+            margin-top: 15px;
+            padding: 15px;
         }
         body {
-            background-color:  #EDF7EF
+            background-color:  #FFF8D7
         }
+        .row{margin-top: 40px;}
 
     </style>
 
@@ -42,10 +45,7 @@
     </div>
     <div class="text-center footer">
 
-        <h4>The writer needs a job</h4>
-        <h4>+234 806 605 6233</h4>
-        <h4>kingsconsult001@gmail.com</h4>
-        <h4>Github: www.github.com/kingsconsult</h4>
+        <h4>1107211075 林建君</h4>
 
     </div>
 </body>

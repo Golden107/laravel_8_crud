@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title','編輯書籍內容')
+
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -31,21 +33,21 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $project->name }}" class="form-control" placeholder="Name">
+                    <strong>BookName:</strong>
+                    <input type="text" name="bname" value="{{ $project->bname }}" class="form-control" placeholder="BookName">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Introduction:</strong>
-                    <textarea class="form-control" style="height:50px" name="introduction"
-                        placeholder="Introduction">{{ $project->introduction }}</textarea>
+                    <strong>Author:</strong>
+                    <textarea class="form-control" style="height:50px" name="author"
+                        placeholder="Author">{{ $project->author}}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    <input type="text" name="location" class="form-control" placeholder="{{ $project->location }}"
+                    <strong>Press:</strong>
+                    <input type="text" name="press" class="form-control" placeholder="press"
                         value="{{ $project->location }}">
                 </div>
             </div>
@@ -53,7 +55,7 @@
                 <div class="form-group">
                     <strong>Cost:</strong>
                     <input type="number" name="cost" class="form-control" placeholder="{{ $project->cost }}"
-                        value="{{ $project->location }}">
+                        value="{{ $project->cost }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
